@@ -1,0 +1,50 @@
+/* Define uma animação chamada "brilho" */
+@keyframes brilho {
+    0% { 
+        /* Define a sombra do texto no início da animação */
+        text-shadow: 0 0 5px #721c24, 0 0 10px #d11717, 0 0 15px #931818;
+    }
+    50% { 
+        /* Define a sombra do texto no meio da animação */
+        text-shadow: 0 0 20px #721c24, 0 0 30px #d11717, 0 0 40px #931818;
+    }
+    100% { 
+        /* Define a sombra do texto no final da animação */
+        text-shadow: 0 0 5px #721c24, 0 0 10px #d11717, 0 0 15px #931818;
+    }
+}
+
+/* Define o estilo da lista não ordenada */
+ul {
+    list-style-type: square; /* Define o tipo de marcador da lista como quadrado */
+    padding: 20px; /* Adiciona preenchimento de 20 pixels ao redor da lista */
+    background-color: #f3f4; /* Define a cor de fundo da lista */
+    border-radius: 10px; /* Define bordas arredondadas com raio de 10 pixels */
+    animation: brilho 2s infinite alternate; /* Aplica a animação "brilho" à lista */
+}
+
+/* Define o estilo dos itens da lista */
+li {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte dos itens da lista */
+    font-size: 1.2rem; /* Define o tamanho da fonte dos itens da lista */
+    margin: 10px 0; /* Adiciona margem vertical de 10 pixels aos itens da lista */
+    padding: 10px; /* Adiciona preenchimento de 10 pixels aos itens da lista */
+    background-color: #d1e7dd; /* Define a cor de fundo dos itens da lista */
+    border: 1px solid #c3e6; /* Define a cor da borda dos itens da lista */
+    border-radius: 5px; /* Define bordas arredondadas com raio de 5 pixels */
+    animation: brilho 2s infinite alternate; /* Aplica a animação "brilho" aos itens da lista */
+}
+
+/* Define o estilo dos itens da lista quando o mouse passa sobre eles */
+li:hover {
+    background-color: green; /* Muda a cor de fundo para verde */
+    cursor: pointer; /* Muda o cursor para indicar que o item é clicável */
+    transition: 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+/* Define o estilo do terceiro item da lista */
+ li:nth-child(3) {
+    background-color: #f8d7; /* Define a cor de fundo do terceiro item */
+    color: #721c24; /* Define a cor do texto do terceiro item */
+    font-weight: bold; /* Define o texto do terceiro item como negrito */
+} 

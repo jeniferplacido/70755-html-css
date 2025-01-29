@@ -1,0 +1,63 @@
+/* Define o estilo do corpo da página */
+body {
+    font-family: sans-serif; /* Define a fonte padrão como sans-serif */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    background-color: blanchedalmond; /* Define a cor de fundo como blanchedalmond */
+    color: #333; /* Define a cor do texto como um tom de cinza escuro */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo do cabeçalho */
+header {
+    background-color: #4caf50; /* Define a cor de fundo do cabeçalho como verde */
+    color: #fff; /* Define a cor do texto do cabeçalho como branco */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo do cabeçalho */
+}
+
+/* Define o estilo do título principal dentro do cabeçalho */
+header h1 {
+    font-size: 3.5rem; /* Define o tamanho da fonte do título como 3.5 rem */
+}
+
+/* Define o estilo das divs com a classe "cores" */
+.cores {
+    width: 200px; /* Define a largura das divs como 200 pixels */
+    height: 100px; /* Define a altura das divs como 100 pixels */
+    margin: 10px auto; /* Centraliza as divs horizontalmente e adiciona margem vertical de 10 pixels */
+    border-radius: 8px; /* Define bordas arredondadas com raio de 8 pixels */
+    font-size: 1.2rem; /* Define o tamanho da fonte como 1.2 rem */
+    font-weight: bold; /* Define o texto como negrito */
+    line-height: 100px; /* Centraliza o texto verticalmente */
+    color: white; /* Define a cor do texto como branco */
+}
+
+/* Define a cor de fundo da div com id "cor1" */
+#cor1 {
+    background-color: #ff5733; /* Define a cor de fundo como um tom de laranja */
+}
+
+/* Define a cor de fundo da div com id "cor2" */
+#cor2 {
+    background-color: rgb(41, 128, 185); /* Define a cor de fundo como um tom de azul */
+}
+
+/* Define a cor de fundo da div com id "cor3" */
+#cor3 {
+    background-color: rgba(111, 14, 214, 0.8); /* Define a cor de fundo como um tom de roxo com opacidade de 0.8 */
+}
+
+/* Define o estilo dos parágrafos com a classe "fonte1" */
+.fonte1 {
+    font-family: Arial, sans-serif; /* Define a fonte como Arial */
+    font-size: 1.2rem; /* Define o tamanho da fonte como 1.2 rem */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+}
+
+/* Define o estilo dos parágrafos com a classe "fonte2" */
+.fonte2 {
+    font-family: "Sixtyfour Convergence", serif; /* Define a fonte como Sixtyfour Convergence */
+    font-size: 1.2rem; /* Define o tamanho da fonte como 1.2 rem */
+    color: red; /* Define a cor do texto como vermelho */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+}

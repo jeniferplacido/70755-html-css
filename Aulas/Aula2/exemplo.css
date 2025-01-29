@@ -1,0 +1,5 @@
+/* Define o estilo para todos os elementos <p> (parágrafos) */
+p {
+    color: royalblue; /* Define a cor do texto como azul real (royalblue) */
+    font-size: 100px; /* Define o tamanho da fonte como 100 pixels */
+}
