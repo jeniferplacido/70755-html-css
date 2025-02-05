@@ -1,0 +1,97 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total dos elementos */
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Outfit', sans-serif; /* Define a fonte padrão como 'Outfit' */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da janela */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3498db; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1.5rem; /* Adiciona preenchimento ao redor do conteúdo */
+}
+
+/* Navbar */
+.nav {
+    background-color: #2c3e50; /* Define a cor de fundo */
+    padding: 1rem 0; /* Adiciona preenchimento vertical */
+}
+
+.nav ul {
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza os itens */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.nav ul li {
+    margin: 0 15px; /* Adiciona margem horizontal */
+}
+
+.nav ul li a {
+    text-decoration: none; /* Remove a decoração do texto */
+    color: white; /* Define a cor do texto */
+    font-weight: 500; /* Define o peso da fonte */
+    padding: 10px; /* Adiciona preenchimento */
+    transition: 0.3s; /* Adiciona transição suave */
+}
+
+.nav ul li a:hover {
+    background-color: #1abc9c; /* Muda a cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Container principal usando Flexbox */
+.container {
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+    padding: 40px; /* Adiciona preenchimento */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+}
+
+/* Caixas de conteúdo */
+.box {
+    background-color: #ecf0f1; /* Define a cor de fundo */
+    padding: 40px; /* Adiciona preenchimento */
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    border: 2px solid #bdc3c7; /* Define a borda */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    width: 30%; /* Define a largura */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #34495e; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1.5rem; /* Adiciona preenchimento */
+    margin-top: auto; /* Adiciona margem superior automática para empurrar o rodapé para o fim da página */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Altera a direção dos itens flexíveis para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+    
+    .box {
+        width: 80%; /* Altera a largura das caixas de conteúdo */
+    }
+}

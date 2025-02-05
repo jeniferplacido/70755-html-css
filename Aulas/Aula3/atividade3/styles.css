@@ -1,0 +1,147 @@
+/* Define o estilo para todos os elementos */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total dos elementos */
+}
+
+/* Define o estilo do corpo da página */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Define a altura da linha */
+    background-color: antiquewhite; /* Define a cor de fundo */
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da janela */
+}
+
+/* Define o estilo do cabeçalho */
+.header {
+    background-color: blueviolet; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Adiciona preenchimento ao redor do conteúdo */
+    flex-shrink: 0; /* Impede que o cabeçalho encolha */
+}
+
+/* Define o estilo da navegação */
+.nav {
+    background-color: #333; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    position: sticky; /* Torna a navegação fixa no topo ao rolar a página */
+    top: 0; /* Define a posição no topo */
+    z-index: 5; /* Define a ordem de empilhamento */
+    padding: 0.5rem 0; /* Adiciona preenchimento vertical */
+    box-shadow: #333; /* Adiciona sombra */
+}
+
+/* Define o estilo da lista de navegação */
+nav ul {
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza os itens */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0.5rem; /* Adiciona preenchimento */
+}
+
+/* Define o estilo dos itens da lista de navegação */
+nav ul li {
+    margin: 0 1rem; /* Adiciona margem horizontal */
+}
+
+/* Define o estilo dos links da navegação */
+nav ul li a {
+    text-decoration: none; /* Remove a decoração do texto */
+    color: white; /* Define a cor do texto */
+    padding: 0.5rem; /* Adiciona preenchimento */
+    transition: background-color 0.3s; /* Adiciona transição suave para a cor de fundo */
+}
+
+/* Define o estilo dos links da navegação ao passar o mouse */
+nav ul li a:hover {
+    background-color: aquamarine; /* Muda a cor de fundo */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Define o estilo da seção principal */
+.main {
+    flex: 1; /* Permite que a seção principal cresça para preencher o espaço disponível */
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 1rem; /* Adiciona preenchimento */
+}
+
+/* Define o estilo da caixa de conteúdo */
+.content-box {
+    background-color: white; /* Define a cor de fundo */
+    padding: 2rem; /* Adiciona preenchimento */
+    margin: 1rem; /* Adiciona margem */
+    border: 2px solid black; /* Define a borda */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    width: 60%; /* Define a largura */
+    max-width: 800px; /* Define a largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo da seção de imagem */
+.img {
+    position: relative; /* Define a posição como relativa */
+    width: 80%; /* Define a largura como 80% */
+    max-width: 800px; /* Define a largura máxima */
+    margin-top: 2rem; /* Adiciona margem superior */
+}
+
+/* Define o estilo da imagem dentro da seção de imagem */
+.img img {
+    width: 100%; /* Define a largura como 100% */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Define o estilo do texto sobre a imagem */
+.img .text {
+    position: absolute; /* Define a posição como absoluta */
+    top: 50%; /* Define a posição no meio vertical */
+    left: 50%; /* Define a posição no meio horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white; /* Define a cor do texto como branco */
+    font-size: 2rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o texto como negrito */
+    text-shadow: 2px 2px 5px rgba(247, 117, 117, 0.7); /* Adiciona sombra ao texto */
+    background-color: rgb(217, 177, 177); /* Define a cor de fundo */
+    padding: 0.5rem 1rem; /* Adiciona preenchimento */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo do rodapé */
+.footer {
+    background-color: blueviolet; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Adiciona preenchimento */
+    flex-shrink: 0; /* Impede que o rodapé encolha */
+}
+
+/* Define o estilo do container flexível */
+.container {
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: row; /* Itens são dispostos em linha (da esquerda para a direita) */
+    flex-direction: row-reverse; /* Itens são dispostos em linha (da direita para a esquerda) */
+    flex-direction: column; /* Itens são dispostos em coluna de cima para baixo */
+    flex-direction: column-reverse; /* Itens são dispostos em coluna de baixo para cima */
+    justify-content: flex-start; /* Alinhado no início do container */
+    justify-content: flex-end; /* Alinhado ao final do container */
+    justify-content: center; /* Alinhado ao centro */
+    justify-content: space-between; /* Espaço distribuído igualmente entre todos os itens */
+    justify-content: space-around; /* Espaço distribuído ao redor dos itens */
+    justify-content: space-evenly; /* Espaço distribuído igualmente entre e ao redor de todos os itens */
+    align-items: stretch; /* Padrão, itens são esticados para preencher o container */
+    align-items: baseline; /* Itens são alinhados pela base do texto */
+    flex-wrap: nowrap; /* Itens não quebram linha */
+    flex-wrap: wrap; /* Itens quebram linha */
+    flex-wrap: wrap-reverse; /* Itens quebram linha na direção inversa */
+    align-content: stretch; /* Alinha o conteúdo para esticar */
+}

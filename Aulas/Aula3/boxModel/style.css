@@ -1,0 +1,8 @@
+.box{
+    width: 200px; /* Largura do conteudo */;
+    height: 100px; /* Altura do conteudo */;
+    padding: 20px; /* Espaçamento interno */;
+    border: 10px solid red; /* Espaçamento externo */
+    margin: 30px; /* Espaçamento externo */
+    border-radius: 10px;
+}
