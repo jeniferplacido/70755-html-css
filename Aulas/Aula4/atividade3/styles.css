@@ -1,0 +1,96 @@
+/* Remove a margem e o preenchimento padrão de todos os elementos e inclui bordas e preenchimento no tamanho total dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o estilo do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+    background-color: #f7900f; /* Define a cor de fundo */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+}
+
+/* Define o estilo do container principal do grid */
+.grid-container {
+    display: grid; /* Define o layout como grid */
+    grid-template-areas: /* Define as áreas do grid */
+        "header header"
+        "menu content"
+        "menu extra"
+        "footer footer";
+    grid-template-columns: 1fr 3fr; /* Define duas colunas com larguras específicas */
+    grid-template-rows: auto 1fr 1fr auto; /* Define quatro linhas com alturas específicas */
+    gap: 10px; /* Adiciona espaçamento de 10px entre os itens */
+    width: 90%; /* Define a largura como 90% */
+    max-width: 1200px; /* Define a largura máxima */
+    height: 90vh; /* Define a altura como 90% da altura da janela */
+}
+
+/* Define o estilo do cabeçalho e do rodapé */
+.header, .footer {
+    background-color: #007bff; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    font-size: 24px; /* Define o tamanho da fonte */
+}
+
+/* Define o estilo do menu lateral */
+.menu {
+    grid-area: menu; /* Define a área do grid */
+    background-color: white; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Adiciona sombra */
+}
+
+/* Define o estilo do conteúdo principal */
+.content {
+    grid-area: content; /* Define a área do grid */
+    background-color: white; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Adiciona sombra */
+}
+
+/* Define o estilo da seção extra */
+.extra {
+    grid-area: extra; /* Define a área do grid */
+    background-color: white; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Adiciona sombra */
+}
+
+/* Define o estilo do grid para telas com largura máxima de 1024px */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "menu content"
+            "menu extra"
+            "footer footer";
+        grid-template-columns: 1fr 2fr; /* Define duas colunas com larguras específicas */
+    }
+}
+
+/* Define o estilo do grid para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "menu"
+            "content"
+            "extra"
+            "footer";
+        grid-template-columns: 1fr; /* Define uma coluna que ocupa todo o espaço disponível */
+    }
+}

@@ -1,0 +1,52 @@
+/* Define o estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: aliceblue; /* Define a cor de fundo como aliceblue */
+}
+
+/* Define o estilo do título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona preenchimento ao redor do texto */
+    background-color: blue; /* Define a cor de fundo como azul */
+    color: white; /* Define a cor do texto como branco */
+}
+
+/* Define o estilo do container principal */
+.container {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: 1fr; /* Define uma coluna que ocupa todo o espaço disponível */
+    gap: 20px; /* Adiciona espaçamento de 20px entre os itens */
+    padding: 20px; /* Adiciona preenchimento ao redor do container */
+}
+
+/* Define o estilo das caixas de imagem */
+.box {
+    background-color: white; /* Define a cor de fundo como branco */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Define o estilo das imagens dentro das caixas */
+.box img {
+    width: 100%; /* Define a largura como 100% do container */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+/* Define o estilo do container para telas com largura mínima de 600px */
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* Define duas colunas que ocupam todo o espaço disponível */
+    }
+}
+
+/* Define o estilo do container para telas com largura mínima de 1024px */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr; /* Define três colunas que ocupam todo o espaço disponível */
+    }
+}
