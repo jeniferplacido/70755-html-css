@@ -1,0 +1,54 @@
+body { /* Estiliza o elemento <body> da página */
+    background-color: #f0f4f8; /* Define a cor de fundo da página como um cinza claro azulado */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão como Arial, com fallback para Helvetica e sans-serif */
+}
+
+.pet-card { /* Estiliza os elementos com a classe 'pet-card' (os cards dos pets) */
+    background-color: white; /* Define o fundo dos cards como branco */
+    border-radius: 15px; /* Arredonda os cantos dos cards com um raio de 15 pixels */
+    padding: 15px; /* Adiciona um espaçamento interno de 15 pixels em todos os lados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil com deslocamento vertical de 4px, desfoque de 8px e opacidade baixa */
+    transition: transform 0.3s ease; /* Cria uma transição suave de 0.3 segundos para a propriedade 'transform' */
+}
+
+.pet-card:hover { /* Estiliza o estado de 'hover' (quando o mouse passa sobre o card) */
+    transform: scale(1.05); /* Aumenta o tamanho do card em 5% */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra para um efeito mais pronunciado */
+}
+
+.pet-card img { /* Estiliza as imagens dentro dos elementos com classe 'pet-card' */
+    border-radius: 10px; /* Arredonda os cantos das imagens com um raio de 10 pixels */
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner pai */
+    height: 200px; /* Define uma altura fixa de 200 pixels para todas as imagens */
+    object-fit: cover; /* Faz a imagem cobrir o espaço definido, cortando se necessário, sem distorcer */
+}
+
+.pet-card__title { /* Estiliza os elementos com a classe 'pet-card__title' (títulos dos pets) */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    color: #2c3e50; /* Define a cor do texto como um azul escuro acinzentado */
+    margin-top: 10px; /* Adiciona uma margem superior de 10 pixels para espaçamento */
+}
+
+.pet-card__desc { /* Estiliza os elementos com a classe 'pet-card__desc' (descrições dos pets) */
+    color: #7f8c8d; /* Define a cor do texto como um cinza médio */
+    font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+}
+
+.pet-card__btn { /* Estiliza os elementos com a classe 'pet-card__btn' (botões dos cards) */
+    background-color: #e67e22; /* Define a cor de fundo como um laranja vibrante */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 8px 15px; /* Adiciona um espaçamento interno de 8px vertical e 15px horizontal */
+}
+
+.pet-card__btn:hover { /* Estiliza o estado de 'hover' do botão (quando o mouse passa sobre ele) */
+    background-color: #d35400; /* Muda a cor de fundo para um laranja mais escuro */
+}
+
+.pet-card__btn:active { /* Estiliza o estado 'active' do botão (quando clicado) */
+    background-color: #f1c40f; /* Muda a cor de fundo para um amarelo dourado */
+}
+
+.pet-card__btn:focus { /* Estiliza o estado 'focus' do botão (quando recebe foco, como por teclado) */
+    outline: 2px solid #3498db; /* Adiciona uma borda de contorno azul de 2 pixels */
+    outline-offset: 2px; /* Desloca o contorno 2 pixels para fora do botão */
+}

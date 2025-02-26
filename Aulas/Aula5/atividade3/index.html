@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 3: Pet Shop com Bootstrap</title>
+  <!-- Importando o CSS do Bootstrap pra usar o grid system e elementos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Importando o JS do Bootstrap pra funcionalidades como o menu colapsável -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Linkando nosso CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navegação fixa no topo com Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- Marca do site -->
+      <a class="navbar-brand" href="#">Pet Shop 🐾</a>
+      <!-- Botão hamburguer pra telas pequenas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção 1: Hero (capa) com grid system -->
+  <section id="home" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Coluna de texto -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <h1>Bem-vindo ao Pet Shop!</h1>
+          <p class="lead">Cuidamos do seu pet com amor e carinho.</p>
+          <a href="#contato" class="btn btn-primary btn-lg">Fale Conosco</a>
+        </div>
+        <!-- Coluna de imagem -->
+        <div class="col-12 col-md-6">
+          <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/6305541-cute-puppy-golden-retriever-em-caixa-de-papelao-em-verde-natureza-desfoque-fundo-animal-saudacao-conceito-gratis-foto.JPG" alt="Cachorro fofo" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: Serviços com grid system -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Banho e Tosa</h5>
+              <p class="card-text">Seu pet limpo e cheiroso!</p>
+              <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Consulta Veterinária</h5>
+              <p class="card-text">Saúde em dia pro seu amigo.</p>
+              <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Pet Shop</h5>
+              <p class="card-text">Rações e acessórios incríveis.</p>
+              <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Contato com formulário -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Entre em Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Pet Shop. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Estilo para o botão com a classe 'botao' */
+.botao {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno de 10px */
+}
+
+/* Estilo para o botão com a classe 'botao' quando o mouse está sobre ele */
+.botao:hover {
+    background-color: #e74c3c; /* Cor de fundo vermelha */
+}
+
+/* Estilo para o campo de entrada de texto */
+input {
+    border: 1px solid #ccc; /* Borda cinza clara */
+    padding: 5px; /* Espaçamento interno de 5px */
+}
+
+/* Estilo para o campo de entrada de texto quando está em foco */
+input:focus {
+    border: 2px solid #2ecc71; /* Borda verde */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo para o botão com a classe 'botao2' */
+.botao2 {
+    background-color: #229704; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno de 10px */
+}
+
+/* Estilo para o botão com a classe 'botao2' quando está ativo */
+.botao2:active {
+    background-color: #f1c40f; /* Cor de fundo amarela */
+}
+
+/* Estilo para os itens pares da lista */
+li:nth-child(even) {
+    color: #8e44ad; /* Cor do texto roxa */
+}
+
+/* Estilo para os itens ímpares da lista */
+li:nth-child(odd) {
+    color: #8e44; /* Cor do texto (incompleta, possivelmente um erro) */
+}
+
+/* Estilo para o último item da lista */
+li:last-child {
+    font-weight: bold; /* Texto em negrito */
+    text-decoration: underline; /* Texto sublinhado */
+}
+
+/* Estilo para a div com a classe 'card' */
+.card {
+    background-color: #3498db; /* Cor de fundo azul */
+    padding: 15px; /* Espaçamento interno de 15px */
+    border: 1px solid #ddd; /* Borda cinza clara */
+}
+
+/* Estilo para o título do card com a classe 'card_titulo' */
+.card_titulo {
+    font-size: 20px; /* Tamanho da fonte de 20px */
+    color: #2c3e50; /* Cor do texto azul escuro */
+}
+
+/* Estilo para o texto do card com a classe 'card_texto' */
+.card_texto {
+    color: #7f8c8d; /* Cor do texto cinza */
+}
+
+/* Estilo para a div com as classes 'card' e 'card--destaque' */
+.card--destaque {
+    background-color: #f1c40f; /* Cor de fundo amarela */
+    border: 2px solid #e67e22; /* Borda laranja */
+}

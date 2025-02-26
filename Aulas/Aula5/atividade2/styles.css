@@ -1,0 +1,162 @@
+/* Estilos gerais pra página ficar bonita */
+body {
+    background-color: #f5f6fa; /* Fundo cinza clarinho */
+    font-family: 'Arial', sans-serif; /* Fonte simples e moderna */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  .container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza na página */
+    padding: 20px; /* Espaço interno */
+  }
+  
+  h1 {
+    text-align: center; /* Centraliza o título principal */
+    color: #2c3e50; /* Azul escuro */
+  }
+  
+  .example-section {
+    background-color: #ffffff; /* Fundo branco pras seções */
+    padding: 15px; /* Espaço interno */
+    margin-bottom: 20px; /* Espaço entre seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  h2 {
+    color: #34495e; /* Azul meio escuro pros subtítulos */
+  }
+  
+  /* === PSEUDOCLASSES DE INTERAÇÃO === */
+  
+  /* Estilo básico do botão */
+  .btn {
+    background-color: #3498db; /* Azul padrão */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaço interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mãozinha pra indicar clique */
+  }
+  
+  /* :hover - muda cor ao passar o mouse */
+  .btn:hover {
+    background-color: #2980b9; /* Azul mais escuro */
+  }
+  
+  /* :active - muda cor enquanto clica */
+  .btn:active {
+    background-color: #e74c3c; /* Vermelho pra indicar clique */
+  }
+  
+  /* Estilo básico do input */
+  input {
+    padding: 8px; /* Espaço interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+  }
+  
+  /* :focus - destaca o input ao clicar */
+  input:focus {
+    border-color: #2ecc71; /* Borda verde */
+    outline: none; /* Remove borda padrão do navegador */
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Sombra verde suave */
+  }
+  
+  /* Estilo básico do link */
+  .link {
+    color: #3498db; /* Azul padrão pra links */
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  /* :visited - muda cor depois de clicar no link */
+  .link:visited {
+    color: #8e44ad; /* Roxo pra links visitados */
+  }
+  
+  /* :hover no link - adiciona sublinhado ao passar o mouse */
+  .link:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+  
+  /* === PSEUDOCLASSES ESTRUTURAIS === */
+  
+  /* Estilo básico da lista */
+  .lista {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove padding padrão */
+  }
+  
+  /* Estilo básico dos itens da lista */
+  .lista li {
+    padding: 10px; /* Espaço interno */
+    margin-bottom: 5px; /* Espaço entre itens */
+    background-color: #ecf0f1; /* Fundo cinza claro */
+  }
+  
+  /* :first-child - estiliza o primeiro item */
+  .lista li:first-child {
+    background-color: #2ecc71; /* Verde pro primeiro item */
+    color: white; /* Texto branco */
+  }
+  
+  /* :last-child - estiliza o último item */
+  .lista li:last-child {
+    background-color: #e74c3c; /* Vermelho pro último item */
+    color: white; /* Texto branco */
+  }
+  
+  /* :nth-child(odd) - estiliza itens ímpares */
+  .lista li:nth-child(odd) {
+    background-color: #3498db; /* Azul pros itens ímpares */
+    color: white; /* Texto branco */
+  }
+  
+  /* === PSEUDOELEMENTOS === */
+  
+  /* Estilo básico do parágrafo */
+  .texto {
+    font-size: 16px; /* Tamanho do texto */
+    color: #7f8c8d; /* Cinza escuro */
+  }
+  
+  /* ::before - adiciona conteúdo antes do parágrafo */
+  .texto::before {
+    content: "⭐ "; /* Estrela antes do texto */
+    color: #f1c40f; /* Amarelo pra estrela */
+  }
+  
+  /* ::after - adiciona conteúdo depois do parágrafo */
+  .texto::after {
+    content: " ⭐"; /* Estrela depois do texto */
+    color: #f1c40f; /* Amarelo pra estrela */
+  }
+  
+  /* Pseudoelementos combinados pra criar um efeito */
+  .texto-destacado {
+    position: relative; /* Necessário pra posicionar os pseudoelementos */
+    padding: 10px; /* Espaço interno */
+  }
+  
+  /* ::before - linha decorativa antes */
+  .texto-destacado::before {
+    content: ""; /* Sem texto, só uma linha */
+    position: absolute; /* Posiciona em relação ao parágrafo */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 50px; /* Largura da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #e67e22; /* Laranja */
+  }
+  
+  /* ::after - linha decorativa depois */
+  .texto-destacado::after {
+    content: ""; /* Sem texto, só uma linha */
+    position: absolute; /* Posiciona em relação ao parágrafo */
+    bottom: 0; /* Alinha na base */
+    right: 0; /* Alinha à direita */
+    width: 50px; /* Largura da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #e67e22; /* Laranja */
+  }

@@ -1,0 +1,59 @@
+/* CSS personalizado pra complementar o Bootstrap */
+
+/* Estilizando a seção hero */
+.hero {
+    background-color: #f8f9fa; /* Fundo cinza claro pra destacar */
+  }
+  
+  /* Ajustando o título da hero */
+  .hero h1 {
+    font-size: 2.5rem; /* Tamanho grande pro título */
+    color: #2c3e50; /* Azul escuro */
+  }
+  
+  /* Estilizando a imagem da hero */
+  .hero img {
+    max-height: 300px; /* Limita a altura da imagem */
+    object-fit: cover; /* Corta a imagem pra caber sem distorcer */
+  }
+  
+  /* Personalizando os cards de serviços */
+  .card {
+    border: none; /* Remove borda padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transição pra animação */
+  }
+  
+  /* Efeito ao passar o mouse nos cards */
+  .card:hover {
+    transform: translateY(-5px); /* Levanta o card levemente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
+  /* Ajustando o botão nos cards */
+  .btn-outline-primary {
+    color: #e67e22; /* Laranja personalizado */
+    border-color: #e67e22; /* Borda laranja */
+  }
+  
+  /* Efeito ao passar o mouse no botão dos cards */
+  .btn-outline-primary:hover {
+    background-color: #e67e22; /* Fundo laranja */
+    color: white; /* Texto branco */
+  }
+  
+  /* Estilizando o formulário */
+  .form-control {
+    border-radius: 8px; /* Bordas arredondadas nos campos */
+  }
+  
+  /* Botão de envio do formulário */
+  .btn-success {
+    background-color: #2ecc71; /* Verde personalizado */
+    border: none; /* Remove borda */
+  }
+  
+  /* Efeito ao passar o mouse no botão de envio */
+  .btn-success:hover {
+    background-color: #27ae60; /* Verde mais escuro */
+  }
