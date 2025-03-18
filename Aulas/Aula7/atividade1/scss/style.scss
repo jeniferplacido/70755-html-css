@@ -1,0 +1,73 @@
+// Variáveis
+
+$cor-primaria: #ff6f61;
+$cor-secundaria: #ffe066;
+$espacamento: 20px;
+
+// Mixin para bordas arredondadas
+
+@mixin borda-arredondada($raio) {
+  border-radius: $raio;
+  border: 2px solid $cor-primaria;
+}
+
+// Estilo base com Extend
+
+.cupcake-base {
+    padding: $espacamento;
+    margin: calc($espacamento / 2);
+    text-align: center;
+}
+
+// Condicional
+$modo: "claro";
+
+body {
+    @if $modo == "claro" {
+        background: #fff;
+        color: #333;
+    } @else {
+        background: #333;
+        color: #fff;
+    }
+}
+
+// Estilo do cupcake
+.cupcake{
+    @extend .cupcake-base;
+    @include borda-arredondada(10px);
+}
+
+// loop para tamanhos
+@for $i from 1 through 3 {
+    .cupcake:ntn-child(#{$i}) {
+        font-size: 16px + $i * 2;
+    }
+}
+
+
+// Mapa de cores pros cupcakes
+$cores-cupcakes: (
+    "choco": #8b4513,
+    "morango": #c72929,
+    "baunilha": #dbdba4
+);
+
+// @each com Mapas para aplicar as cores
+@each $sabor, $cor in $cores-cupcakes {
+    .cupcake-#{$sabor} {
+        background-color: $cor;
+    }
+}
+
+// header com um toque especial
+
+header {
+    background: $cor-secundaria;
+    padding: $espacamento;
+    text-align: center;
+    h1 {
+        color: $cor-primaria;
+        @include borda-arredondada(5px);
+    }
+}

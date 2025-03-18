@@ -1,0 +1,52 @@
+.cupcake-base, .cupcake {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+.cupcake {
+  border-radius: 10px;
+  border: 2px solid #ff6f61;
+}
+
+.cupcake:ntn-child(1) {
+  font-size: 18px;
+}
+
+.cupcake:ntn-child(2) {
+  font-size: 20px;
+}
+
+.cupcake:ntn-child(3) {
+  font-size: 22px;
+}
+
+.cupcake-choco {
+  background-color: #8b4513;
+}
+
+.cupcake-morango {
+  background-color: #c72929;
+}
+
+.cupcake-baunilha {
+  background-color: #dbdba4;
+}
+
+header {
+  background: #ffe066;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  color: #ff6f61;
+  border-radius: 5px;
+  border: 2px solid #ff6f61;
+}
+
+/*# sourceMappingURL=style.css.map */
